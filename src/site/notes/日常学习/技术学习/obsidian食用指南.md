@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"///obsidian/"}
+{"dg-publish":true,"permalink":"///obsidian/","tags":["gardenEntry"]}
 ---
 
 # 惯例废话
