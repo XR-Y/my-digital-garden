@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/日常学习/技术学习/obsidian食用指南/","tags":["gardenEntry"],"noteIcon":"","created":"","updated":""}
+{"dg-publish":true,"permalink":"/日常学习/技术学习/obsidian食用指南/","tags":["技术学习","gardenEntry","gardenEntry","gardenEntry"],"noteIcon":"","created":"","updated":""}
 ---
 
 
