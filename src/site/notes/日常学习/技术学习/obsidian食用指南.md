@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"///obsidian/","tags":["gardenEntry"]}
+{"dg-publish":true,"permalink":"/日常学习/技术学习/obsidian食用指南/","tags":["gardenEntry"],"created":"","updated":""}
 ---
 
 # 惯例废话
