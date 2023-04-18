@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/日常学习/技术学习/obsidian食用指南/","tags":["技术学习","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry"],"noteIcon":"","created":"","updated":""}
+{"dg-publish":true,"permalink":"/日常学习/技术学习/obsidian食用指南/","tags":["Software","gardenEntry","gardenEntry"],"noteIcon":"","created":"","updated":""}
 ---
 
 
@@ -33,7 +33,7 @@
 - bug
 - example
 - quote, cite
-  > [!example]
+  > [!example]-
   > 这里是 callout 模块
   > 支持**markdown** 和 [[Internal link\|wikilinks]]
 
@@ -79,7 +79,7 @@ obsidian 两大推荐主题之一，折腾党专用，主打一个高度自定�
 顶级插件，在记笔记的时候难免需要搜索一些内容，同时笔记里也时常会插入一些 URL，这个插件支持在 obsidian 中直接打开网页（而非是默认浏览器），或输入 URL，或调用搜索引擎搜索。
 美中不足的是，该插件目前还未上线市场，需要安装 obsidian42-BRAT 插件，并通过该插件安装未上线市场的插件，同时可能需要安装 Custom Frames 插件，毕竟 Web Browser 插件是基于此实现的。
 
-> [!info] 2023.04.02 补充
+> [!info]+ 2023.04.02 补充
 > 现有 surfing 插件，已上市场，并支持同样功能 👍，使用这个可以替代需要连同自身一共三个插件的 Web Browser 了。
 > 在 obsidian 内部分屏开网页+笔记页面的体验 MAX！
 
@@ -116,7 +116,7 @@ PDF 批注插件，使用时需要注意尽量不要更改 PDF 文件的位置�
 编辑工具栏，适用于 markdown 语法偏复杂或不熟悉时，类似语雀等在线文档的编辑栏，提供了标题、加粗、高亮、引用等基本操作，更可以自定义需要的操作。
 当然，目前存在性能问题，插件启动时间大约 500ms 上下。
 
-> [!done] 2023.04.17 补充
+> [!done]+ 2023.04.17 补充
 > 当前性能问题已解决 👏，插件启动时间降低为原来的 1/10。
 
 ## 表格功能
@@ -177,7 +177,7 @@ PDF 批注插件，使用时需要注意尽量不要更改 PDF 文件的位置�
 
 obsidian 白嫖发布的终极解决方案！可以自由选择需要发布的文档，支持 callouts，支持 obsidian 内各种主题展示。具体流程借助 Github 仓库和 Vercel 服务部署，一键式轻松发布，基本替代了博客，不再需要将文章搬运到博客服务或者折腾复杂易错的联动流程。
 
-> [!help] 当前 Vercel 服务对应域名污染严重 ❌，国内访问不友好。
+> [!help]+ 当前 Vercel 服务对应域名污染严重 ❌，国内访问不友好。
 > 解决方案：💸 购买一个域名，同时在 Vercel 服务的基础上加一层 Cloudflare CDN，即可实现在可以接受的速度下访问发布的笔记，同时域名还是自有域名，完美。
 
 ## 博客衍生
