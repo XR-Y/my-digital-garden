@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Homepage/","title":"Welcome!","tags":["home","gardenEntry"],"noteIcon":"1","created":"2023-04-18T13:20:23.720+08:00","updated":"2023-04-19T22:42:02.450+08:00"}
+{"dg-publish":true,"permalink":"/Homepage/","title":"Welcome!","tags":["home","gardenEntry"],"noteIcon":"1","created":"2023-04-18T13:20:23.720+08:00","updated":"2023-04-19T22:50:44.079+08:00"}
 ---
 
 
@@ -11,9 +11,9 @@
   - NJU SE 在读 📖
   - 可以在[GitHub](https://github.com/XR-Y)找到我 👈
   - 极简主义、实用主义践行者 🙌
-  - 随缘更新，佛系研学，率性生活🎉
+  - 随缘更新，佛系研学，率性生活 🎉
   
-- 🌏关于本页
+- 🌏 关于本页
 	- 域名：Namesilo
 	- 记录：Obsidian + 插件Digital Garden
 	- 格式：Markdown
