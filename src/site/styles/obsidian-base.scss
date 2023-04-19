@@ -607,13 +607,8 @@ body {
     }
   }
 
-  @font-face {
-  font-family: "LXGW WenKai Screen R";
-  src: url(LXGWWenKaiScreenR.ttf);
-  }
-
   body {
-    --font-default: "LXGW WenKai Screen R", Roboto, Microsoft YaHei UI, ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-default: "LXGW WenKai Screen R", "Segoe UI", Roboto, Microsoft YaHei UI, ui-sans-serif, system-ui, -apple-system, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     ;
     --font-monospace-default: Menlo, SFMono-Regular, Consolas, "Roboto Mono", 'Source Code Pro', monospace;
     --font-interface-override: '??';
