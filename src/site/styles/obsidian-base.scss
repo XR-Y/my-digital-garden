@@ -607,13 +607,10 @@ body {
     }
   }
 
-  @font-face {
-  font-family: "LXGW WenKai Screen R";
-  src: url(../LXGWWenKaiScreenR.woff2);
-  }
+  @import 'lxgw-wenkai-screen-webfont/style.css';
 
   body {
-    --font-default: "LXGW WenKai Screen R", "Segoe UI", Roboto, Microsoft YaHei UI, ui-sans-serif, system-ui, -apple-system, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-default: "LXGW WenKai Screen", "Segoe UI", Roboto, Microsoft YaHei UI, ui-sans-serif, system-ui, -apple-system, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     ;
     --font-monospace-default: Menlo, SFMono-Regular, Consolas, "Roboto Mono", 'Source Code Pro', monospace;
     --font-interface-override: '??';
@@ -1321,17 +1318,17 @@ body {
   }
   /* Remove the native selection to avoid stacking
      selection styles with CM6
-  
+
   .markdown-source-view.mod-cm6 {
       ::selection {
           background-color: transparent;
       }
-  
+
       .inline-title::selection,
       .cm-inline-code::selection {
           background-color: var(--text-selection);
       }
-  
+
       .HyperMD-codeblock {
           ::selection {
               background-color: var(--text-selection);
@@ -1509,27 +1506,27 @@ body {
     display: none;
   }
   /*
-  
-  OS-dependent rules to make space for traffic lights buttons, 
+
+  OS-dependent rules to make space for traffic lights buttons,
   window buttons and sidebar toggles.
-  
+
   ---
-  
-  Scenarios to account for: 
-  
+
+  Scenarios to account for:
+
   Window frame styles
   - Hidden
   - Custom
   - Native
   - Full screen
-  
+
   Sidebar states
   - Left sidebar open
   - Left sidebar closed
   - Right sidebar open
   - Right sidebar closed
   - Pop-out (no sidebars)
-  
+
   */
   body {
     --zoom-factor: 1;
@@ -3846,7 +3843,7 @@ body {
     color: var(--text-accent);
   }
   /* Document search and replace */
-  /* 
+  /*
   Moves search to the top
   #todo move this into DOM */
   .markdown-reading-view.is-searching,
@@ -10631,4 +10628,4 @@ body {
     font-size: var(--font-ui-medium);
     width: 100%;
   }
-  
+
