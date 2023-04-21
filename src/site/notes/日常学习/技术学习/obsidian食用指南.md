@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/日常学习/技术学习/obsidian食用指南/","tags":["Software"],"noteIcon":"1","created":"2022-11-22T23:37:25.908+08:00","updated":"2023-04-18T13:24:32.349+08:00"}
+{"dg-publish":true,"permalink":"/日常学习/技术学习/obsidian食用指南/","tags":["Software"],"noteIcon":"1","created":"2022-11-22T23:37:25.908+08:00","updated":"2023-04-21T11:00:33.799+08:00"}
 ---
 
 
@@ -161,11 +161,15 @@ PDF 批注插件，使用时需要注意尽量不要更改 PDF 文件的位置�
 
 ### Emoji ToolBar
 
-顾名思义，方便直接检索或选择对应的 emoji，本质上和 Editing ToolBar 类似。
+顾名思义，方便直接检索🔍或选择对应的 emoji，本质上和 Editing ToolBar 类似。
 
 ### Weread Plugin
 
 导入微信读书书籍元数据、划线和评论 💬。
+
+### Image Auto Upload Plugin
+
+自动将复制粘贴的图片上传到图床 🖼️（借助 PicGo），并复制对应链接到剪切板，极大地方便了带图Markdown文件的多平台查看和迁移。
 
 ## 发布分享
 
