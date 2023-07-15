@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/日常学习/技术学习/obsidian食用指南/","tags":["Software"],"noteIcon":"1","created":"2022-11-22T23:37:25.908+08:00","updated":"2023-04-26T22:55:13.071+08:00"}
+{"dg-publish":true,"permalink":"/日常学习/技术学习/obsidian食用指南/","tags":["Software"],"noteIcon":"1","created":"2023-07-14T17:23:36.118+08:00","updated":"2023-04-26T22:55:13.071+08:00"}
 ---
 
 
