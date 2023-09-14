@@ -1,4 +1,4 @@
-<span id="wordCount" style="color: var(--text-muted); font-size: 8em;"></span>
+<span id="wordCount" style="color: var(--text-muted); font-size:14px;"></span>
 <script type="text/javascript">
   function timerMessage() {
     var count = 0; // 统计字数
@@ -12,5 +12,5 @@
     var time = Math.max(Math.floor(count / 400), 1);
     document.querySelector("#wordCount").innerHTML = String.fromCodePoint("0x1F4D6") + '本文共' + count + '字，预计阅读时间' + time + '分钟';
   }
-  setTimeout(timerMessage, 4000);
+  setTimeout(timerMessage, 1000);
 </script>
