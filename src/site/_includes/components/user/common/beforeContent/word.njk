@@ -1,13 +1,16 @@
-<span id="wordCount" style="color: var(--text-muted);"></span>
+<span id="wordCount" style="color: var(--text-muted); font-size: 8em;"></span>
 <script type="text/javascript">
-  var count = 0; // 统计字数
-  var str = document.getElementsByTagName("main")[0].innerHTML; // 网页文字包含标签
-  var tmpDiv = document.createElement("div");
-  tmpDiv.innerHTML = str;
-  str = tmpDiv.textContent || tmpDiv.innerText || "";
-  str = str.replace(/\ +/g,"");
-  str = str.replace(/[\r\n]/g,"");
-  count = str.length;
-  var time = Math.max(Math.floor(count / 400), 1);
-  document.querySelector("#wordCount").innerHTML = String.fromCodePoint("0x1F4D6") + '本文共' + count + '字，预计阅读时间' + time + '分钟';
+  function timerMessage() {
+    var count = 0; // 统计字数
+    var str = document.getElementsByTagName("main")[0].innerHTML; // 网页文字包含标签
+    var tmpDiv = document.createElement("div");
+    tmpDiv.innerHTML = str;
+    str = tmpDiv.textContent || tmpDiv.innerText || "";
+    str = str.replace(/\ +/g,"");
+    str = str.replace(/[\r\n]/g,"");
+    count = str.length;
+    var time = Math.max(Math.floor(count / 400), 1);
+    document.querySelector("#wordCount").innerHTML = String.fromCodePoint("0x1F4D6") + '本文共' + count + '字，预计阅读时间' + time + '分钟';
+  }
+  setTimeout(timerMessage, 4000);
 </script>
