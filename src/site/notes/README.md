@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/README/","title":"Welcome!","tags":["home","gardenEntry"],"noteIcon":"1","created":"2023-07-14T17:22:00.770+08:00","updated":"2023-08-24T20:54:36.000+08:00"}
+{"dg-publish":true,"permalink":"/README/","title":"Welcome!","tags":["home","gardenEntry"],"noteIcon":"1","created":"2023-07-14T17:22:00.770+08:00","updated":"2023-09-14T23:23:03.121+08:00"}
 ---
 
 
@@ -14,10 +14,11 @@
   - 在极简主义和花里胡哨之间反复横跳 🤹
   - 随缘更新，佛系研学，率性生活 🎉
   
-- 🌏 关于本页
+- 🌏 关于本站
 	- 域名：Namesilo
 	- 记录：Obsidian + 插件Digital Garden
 	- 格式：Markdown
 	- 项目：Github
 	- 托管：Vercel
 	- CDN：Cloudflare
+	- 评论：Waline
