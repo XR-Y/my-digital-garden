@@ -1,16 +1,16 @@
 <h3 id="wordCount"></h3>
 <script type="text/javascript">
   var count = 0 // 统计字数
-  var allStr = document.body.innerHTML // 网页文字包含标签
-  allStr = allStr.replace(/<\w+?>/g, '').replace(/<\/\w+?>/g, '') // 过滤网页标签
-  console.log(allStr)
-  var reg = new RegExp(str, 'g') // 匹配的文字正则
-  reg.exec(allStr)
-  console.log(reg.lastIndex)
-  while (reg.lastIndex) {
-    count++
-    reg.exec(allStr)
-  }
-  console.log('字数统计结果：', count)
-  document.querySelector("#wordCount").innerHTML = '本文共 ' + count + '字';
+  var str = document.body.innerHTML // 网页文字包含标签
+  //先将回车换行符做特殊处理
+  str = str.replace(/(\r\n+|\s+|　+)/g,"龘");
+  //处理英文字符数字，连续字母、数字、英文符号视为一个单词
+  str = str.replace(/[\x00-\xff]/g,"m");	
+  //合并字符m，连续字母、数字、英文符号视为一个单词
+  str = str.replace(/m+/g,"*");
+    //去掉回车换行符
+  str = str.replace(/龘+/g,"");
+  //返回字数
+  sLen = str.length;
+  document.querySelector("#wordCount").innerHTML = '本文共 ' + sLen + '字';
 </script>
