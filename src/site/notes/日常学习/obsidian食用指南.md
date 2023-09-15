@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/日常学习/obsidian食用指南/","tags":["Software"],"noteIcon":"1","created":"2023-07-14T17:23:36.118+08:00","updated":"2023-08-24T20:54:36.000+08:00"}
+{"dg-publish":true,"permalink":"/日常学习/obsidian食用指南/","tags":["Software"],"noteIcon":"1","created":"2023-07-14T17:23:36.118+08:00","updated":"2023-09-15T18:41:58.863+08:00"}
 ---
 
 
@@ -67,8 +67,9 @@ obsidian 两大推荐主题之一，折腾党专用，主打一个高度自定�
 利用 Webdav，可以实现实时同步，常规操作通常是：🖥️PC 端编辑/查看 → 同步至网盘 →📲 移动端查看/少量编辑 → 同步的循环。
 好的，仅凭这个就可以取代幕布、notion、印象笔记啥的了……
 🔄 文件增多后同步偶尔卡顿/网络超时，不过基本还是可以满足日常使用。
+
 > [!bug]+ 2023.04.26 补充
-> 😵文件增多的时候越来越难用了，已经迁移至Obsidian Git和Github同步，同时移动端编辑通过Seafile，查看通过Digital Garden发布的网站。
+> 😵 文件增多的时候越来越难用了，已经迁移至 Obsidian Git 和 Github 同步，同时移动端编辑通过 Seafile，查看通过 Digital Garden 发布的网站。
 
 ### Obsidian Git
 
@@ -121,6 +122,10 @@ PDF 批注插件，使用时需要注意尽量不要更改 PDF 文件的位置�
 > [!done]+ 2023.04.17 补充
 > 当前性能问题已解决 👏，插件启动时间降低为原来的 1/10。
 
+### Duplicate Line
+
+习惯了 VS Code/JetBrains 等工具提供的快捷键复制上一行功能，在完成特定格式的笔记时很有帮助。
+
 ## 表格功能
 
 ### Table Generator
@@ -131,7 +136,7 @@ PDF 批注插件，使用时需要注意尽量不要更改 PDF 文件的位置�
 
 表格编辑快捷操作，对于频繁编辑添加 md 中表格场景适用。
 
-### Notion-Like Table
+### DataLoom
 
 创建和 Notion 类似的表格，支持 Tag、Time、Number、Checkbox 等列类型，唯一是格式是 TABLE 文件，内部 JSON 格式，和插件耦合度较高，具备一定的转移成本。
 
@@ -163,7 +168,7 @@ PDF 批注插件，使用时需要注意尽量不要更改 PDF 文件的位置�
 
 ### Emoji ToolBar
 
-顾名思义，方便直接检索🔍或选择对应的 emoji，本质上和 Editing ToolBar 类似。
+顾名思义，方便直接检索 🔍 或选择对应的 emoji，本质上和 Editing ToolBar 类似。
 
 ### Weread Plugin
 
@@ -171,7 +176,11 @@ PDF 批注插件，使用时需要注意尽量不要更改 PDF 文件的位置�
 
 ### Image Auto Upload Plugin
 
-自动将复制粘贴的图片上传到图床 🖼️（借助 PicGo），并复制对应链接到剪切板，极大地方便了带图Markdown文件的多平台查看和迁移。
+自动将复制粘贴的图片上传到图床 🖼️（借助 PicGo），并复制对应链接到剪切板，极大地方便了带图 Markdown 文件的多平台查看和迁移。
+
+### Novel Word Count
+
+在文件目录树的每一栏增加对应的字数/笔记数/词数等统计，各笔记情况一目了然。
 
 ## 发布分享
 
@@ -185,12 +194,17 @@ obsidian 白嫖发布的终极解决方案！可以自由选择需要发布的�
 
 > [!help]+ 当前 Vercel 服务对应域名污染严重 ❌，国内访问不友好。
 > 解决方案：💸 购买一个域名，同时在 Vercel 服务的基础上加一层 Cloudflare CDN，即可实现在可以接受的速度下访问发布的笔记，同时域名还是自有域名，完美。
+> 另外，Digital Garden 支持自定义插件，因此可以使用 Waline 作为 💬 评论系统插件，不过无备案采用国际版的话同样需要 Vercel 服务的基础上增加一层 Cloudflare CDN。
 
 ## 博客衍生
 
 ### Better Word Count
 
 相比 obsidian 自带的字符统计，该插件提供了更完善和可自定义范围的单词统计，毕竟字数不是关键，词数统计很多时候是更加有用的。
+
+### File Info Panel
+
+比 Better Word Count 更详细的单个文档信息统计，包括词频、外部链接收集等，基本可以替代原生字符统计功能和 Better Word Count 插件。
 
 ### Reading Time
 
@@ -209,3 +223,7 @@ obsidian 白嫖发布的终极解决方案！可以自由选择需要发布的�
 ### Status Bar Quote
 
 在底部状态栏增加一句话，仅此而已。
+
+### File Color
+
+设置文件目录树颜色，便于区分。
