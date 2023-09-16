@@ -1,12 +1,12 @@
 ---
-{"dg-publish":true,"permalink":"/README/","title":"Welcome!","tags":["home","gardenEntry"],"noteIcon":"1","created":"2023-07-14T17:22:00.770+08:00","updated":"2023-09-16T14:16:15.378+08:00"}
+{"dg-publish":true,"permalink":"/README/","title":"Welcome!","tags":["home","gardenEntry"],"noteIcon":"1","created":"2023-07-14T17:22:00.770+08:00","updated":"2023-09-16T14:27:34.554+08:00"}
 ---
 
 
 > [!cite] 把诗书马上，笑驱锋镝。✍️
 
 👋 游客朋友，欢迎光临！
-👏 创建 30 篇文档，共 108382 字，写完一本 杨绛 的《我们仨》了！
+👏 创建 30 篇文档，共 108255 字，写完一本 杨绛 的《我们仨》了！
 
 
 - 🤔 关于我
