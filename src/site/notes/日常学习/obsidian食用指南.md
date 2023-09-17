@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/日常学习/obsidian食用指南/","tags":["Software"],"noteIcon":"1","created":"2023-07-14T17:23:36.118+08:00","updated":"2023-09-17T16:24:24.584+08:00"}
+{"dg-publish":true,"permalink":"/日常学习/obsidian食用指南/","tags":["Software"],"noteIcon":"1","created":"2023-07-14T17:23:36.118+08:00","updated":"2023-09-17T16:47:05.159+08:00"}
 ---
 
 
@@ -36,8 +36,8 @@
   > [!example]-
   > 这里是 callout 模块
   > 支持**markdown** 和 [[Internal link\|wikilinks]]
-
 <br>
+
 # 主题分享
 
 ## Style Settings
