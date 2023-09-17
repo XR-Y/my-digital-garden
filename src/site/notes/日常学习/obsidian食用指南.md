@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/日常学习/obsidian食用指南/","tags":["Software"],"noteIcon":"1","created":"2023-07-14T17:23:36.118+08:00","updated":"2023-09-15T18:41:58.863+08:00"}
+{"dg-publish":true,"permalink":"/日常学习/obsidian食用指南/","tags":["Software"],"noteIcon":"1","created":"2023-07-14T17:23:36.118+08:00","updated":"2023-09-17T16:24:24.584+08:00"}
 ---
 
 
@@ -37,6 +37,7 @@
   > 这里是 callout 模块
   > 支持**markdown** 和 [[Internal link\|wikilinks]]
 
+<br>
 # 主题分享
 
 ## Style Settings
@@ -54,6 +55,7 @@ obsidian 两大推荐主题之一，曾经的社区主题王，开箱即用，�
 ## Minimal
 
 obsidian 两大推荐主题之一，折腾党专用，主打一个高度自定义，市场还有专属的主题可视化编辑插件 Minimal Theme Settings，Github 也有定制化后的成品配置文件分享。
+<br>
 
 # 功能插件
 
@@ -89,6 +91,10 @@ obsidian 两大推荐主题之一，折腾党专用，主打一个高度自定�
 ### Search On Internet
 
 搜索插件，选中对应的内容，直接在新选项页调用搜索引擎，和 Web Browser/Surfing 配合食用更佳。
+
+### Convert Url To Preview
+
+将选中的 URL 转换为设置好格式的 iframe 嵌入框，使用场景不多，但需要的时候就很省事。
 
 ## 笔记增强
 
