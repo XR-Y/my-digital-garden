@@ -1,12 +1,12 @@
 ---
-{"dg-publish":true,"permalink":"/README/","title":"Welcome!","pinned":true,"tags":["home","gardenEntry","gardenEntry","gardenEntry"],"noteIcon":"1","created":"2023-07-14T17:22:00.770+08:00","updated":"2023-09-17T22:22:07.775+08:00"}
+{"dg-publish":true,"permalink":"/README/","title":"Welcome!","pinned":true,"tags":["home","gardenEntry","gardenEntry","gardenEntry"],"noteIcon":"1","created":"2023-07-14T17:22:00.770+08:00","updated":"2023-09-18T09:46:52.482+08:00"}
 ---
 
 
 > [!cite] 把诗书马上，笑驱锋镝。✍️
 
 👋 游客朋友，欢迎光临！
-👏 创建 30 篇文档，共 108622 字，写完一本 杨绛 的《我们仨》了！
+👏 创建 30 篇文档，共 108685 字，写完一本 杨绛 的《我们仨》了！
 
 
 - 🤔 关于我
@@ -24,4 +24,5 @@
   - 托管：Vercel
   - CDN：Cloudflare
   - 评论：Waline
+  - 灵感收集：[Memos](https://usememos.com/)
   - 👉[RSS 订阅](https://xryu.top/feed.xml)
