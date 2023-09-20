@@ -17,7 +17,13 @@ serverURL: 'https://comment.zytomorrow.top',
         init({
             el: '#waline',
             serverURL: 'https://waline.xryu.top',
-            });
+            emoji: [
+                '//unpkg.com/@waline/emojis@1.2.0/weibo',
+                '//unpkg.com/@waline/emojis@1.2.0/bmoji',
+            ],
+            reaction: true,
+            dark: 'auto',
+        });
 </script>
 <hr>
 
