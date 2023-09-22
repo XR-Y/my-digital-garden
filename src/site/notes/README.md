@@ -1,12 +1,12 @@
 ---
-{"dg-publish":true,"permalink":"/README/","title":"Welcome!","pinned":true,"tags":["home","gardenEntry","gardenEntry"],"noteIcon":"1","created":"2023-07-14T17:22:00.770+08:00","updated":"2023-09-22T21:06:28.558+08:00"}
+{"dg-publish":true,"permalink":"/README/","title":"Welcome!","pinned":true,"tags":["home","gardenEntry","gardenEntry"],"noteIcon":"1","created":"2023-07-14T17:22:00.770+08:00","updated":"2023-09-22T21:17:36.797+08:00"}
 ---
 
 
 > [!cite] 把诗书马上，笑驱锋镝。✍️
 
 👋 游客朋友，欢迎光临！
-👏 创建 31 篇文档，共 114951 字，写完一本 鲁迅 的《彷徨》了！
+👏 创建 31 篇文档，共 115081 字，写完一本 鲁迅 的《彷徨》了！
 
 
 - 🤔 关于我
