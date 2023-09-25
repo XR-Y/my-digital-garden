@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/日常学习/Obsidian，你的博客/","noteIcon":"1","created":"2023-09-20T21:35:09.212+08:00","updated":"2023-09-22T21:17:07.791+08:00"}
+{"dg-publish":true,"permalink":"/日常学习/Obsidian，你的博客/","noteIcon":"1","created":"2023-09-20T21:35:09.212+08:00","updated":"2023-09-25T11:49:17.938+08:00"}
 ---
 
 
@@ -183,3 +183,42 @@ Waline 配置好跟随系统切换深浅色模式后，主界面自然也要跟�
 Memos，一个记录短灵感和备忘录的开源工具，使用 docker **一键部署**，和博客完美互补，GitHub 亦有移动端、小程序端、浏览器插件等多平台支持。
 
 <iframe src="https://usememos.com/" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
+界面字体优化和增加表情回应[emaction.cool](https://emaction.cool/)
+``` javascript
+document.getElementsByTagName('head')[0].innerHTML += "<link rel=\"stylesheet\" href=\"https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/style.css\" /><style>body.font_family_lora .article_content, .title-text, .section-title, .font-mono, text-gray-400, .w-full, .tip-text, .filter-item-container  {font-family: 'LXGW WenKai Screen' !important }</style><style>body {font-family: 'LXGW WenKai Screen' }</style>"
+var flag = true;
+function addEmotionJS() { 
+    var memosEmotion = document.createElement("script");
+    memosEmotion.type = "module";
+    memosEmotion.src = `https://cdn.jsdelivr.net/gh/emaction/frontend.dist@1.0.11/bundle.js`;
+    var emotionPos = document.getElementsByTagName("script")[0];
+    emotionPos.parentNode.insertBefore(memosEmotion, emotionPos);
+    flag = false;
+};
+function loadEmotion() {
+    if(flag) addEmotionJS();
+    var memoAt = document.querySelectorAll('.resource-wrapper');
+    memoAt.forEach(function(item, index) {
+        if(item.parentElement.querySelector('emoji-reaction') === null){
+            item.insertAdjacentHTML('afterend', '<emoji-reaction class="emoji-reaction" style="margin-top:2%; z-index: 99999;" theme="system" availableArrayString="🎉,party-popper;😕,confused-face;❤️,red-heart;🚀,rocket;👀,eyes;"></emoji-reaction>'); 
+        }
+    })
+    memoAt = document.querySelectorAll('emoji-reaction');
+    memoAt.forEach(function(item, index) {
+        item.setAttribute("reacttargetid", "emoji-" + item.parentElement.classList[1]);
+    })
+}
+var start = setInterval(function(){
+    if(window.location.pathname !== '/explore') return;
+    loadEmotion()
+    if(document.querySelector(".memos-1").hasChildNodes()){
+        clearInterval(start);
+        console.log("DONE");
+    }
+}, 1500)
+```
+
+<br>
+
+表情回应效果图如下：
+![image.png](https://s2.loli.net/2023/09/25/oRdGvSEKn14hOX3.png)
