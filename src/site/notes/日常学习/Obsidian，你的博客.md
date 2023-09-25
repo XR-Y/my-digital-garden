@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/日常学习/Obsidian，你的博客/","noteIcon":"1","created":"2023-09-20T21:35:09.212+08:00","updated":"2023-09-25T11:49:17.938+08:00"}
+{"dg-publish":true,"permalink":"/日常学习/Obsidian，你的博客/","noteIcon":"1","created":"2023-09-20T21:35:09.212+08:00","updated":"2023-09-25T12:17:28.009+08:00"}
 ---
 
 
@@ -184,6 +184,7 @@ Memos，一个记录短灵感和备忘录的开源工具，使用 docker **一�
 
 <iframe src="https://usememos.com/" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
 界面字体优化和增加表情回应[emaction.cool](https://emaction.cool/)
+
 ``` javascript
 document.getElementsByTagName('head')[0].innerHTML += "<link rel=\"stylesheet\" href=\"https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/style.css\" /><style>body.font_family_lora .article_content, .title-text, .section-title, .font-mono, text-gray-400, .w-full, .tip-text, .filter-item-container  {font-family: 'LXGW WenKai Screen' !important }</style><style>body {font-family: 'LXGW WenKai Screen' }</style>"
 var flag = true;
