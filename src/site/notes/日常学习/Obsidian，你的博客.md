@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/日常学习/Obsidian，你的博客/","noteIcon":"1","created":"2023-09-20T21:35:09.212+08:00","updated":"2023-09-25T12:17:28.009+08:00"}
+{"dg-publish":true,"permalink":"/日常学习/Obsidian，你的博客/","noteIcon":"1","created":"2023-09-20T21:35:09.212+08:00","updated":"2023-10-07T15:01:17.183+08:00"}
 ---
 
 
@@ -33,11 +33,15 @@
 首先，买个域名，反正自己博客肯定也要个好看点的域名，vercel 那一长串既不好记也不利于分享。国内各大厂商可买，Namesilo 等国外低价厂商也可，还可以剑走偏锋捞捞免费域名，不选.com 或者.cn 这种应该都挺便宜，一年几块钱。
 初心别忘了，是为了国内更好地访问，因此使用 Cloudflare（海外 CDN）来解除封印，虽然 Cloudflare 被称为减速 CDN，但加上后访问 Vercel 的速度还算可以接受，而且白嫖要什么自行车，差不多够用就好。
 所以只需要将域名从代理商转到 Cloudflare 接管并配置好 DNS（主要是 A 和 CNAME），其中涉及到 Vercel 域名的记得使用`cname-china.vercel-dns.com`。同样，Vercel 处也对应配上购买的域名，自动生成 SSL 证书并校验通过后，就可以尝试国内访问了，总体速度还行！（下图每次测试随机波动性较大，**仅供参考**）
+
+> [!caution]+ 2023.10.05 更新
+> 突然发现不用魔法 🔮 又上不去了，并且竟然直接跳到反诈中心。
+> 好好好，麻了，直接开 Cloudflare 全代理了（先前选的仅 DNS），牺牲速度换可访问性吧。
+
 ![Snipaste_2023-09-20_22-23-13.jpg](https://s2.loli.net/2023/09/20/eDUvEgCncWSVwR1.jpg)
 
-> [!hint]+ 一点建议
+> [!advice]+ 一点建议
 > 只需要文章发布功能，就可以到此为止了，后续章节仅供习惯折腾，并乐在其中的用户参考。
-> <br>
 
 <br>
 
@@ -185,10 +189,10 @@ Memos，一个记录短灵感和备忘录的开源工具，使用 docker **一�
 <iframe src="https://usememos.com/" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
 界面字体优化和增加表情回应[emaction.cool](https://emaction.cool/)
 
-``` javascript
+```javascript
 document.getElementsByTagName('head')[0].innerHTML += "<link rel=\"stylesheet\" href=\"https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/style.css\" /><style>body.font_family_lora .article_content, .title-text, .section-title, .font-mono, text-gray-400, .w-full, .tip-text, .filter-item-container  {font-family: 'LXGW WenKai Screen' !important }</style><style>body {font-family: 'LXGW WenKai Screen' }</style>"
 var flag = true;
-function addEmotionJS() { 
+function addEmotionJS() {
     var memosEmotion = document.createElement("script");
     memosEmotion.type = "module";
     memosEmotion.src = `https://cdn.jsdelivr.net/gh/emaction/frontend.dist@1.0.11/bundle.js`;
@@ -201,7 +205,7 @@ function loadEmotion() {
     var memoAt = document.querySelectorAll('.resource-wrapper');
     memoAt.forEach(function(item, index) {
         if(item.parentElement.querySelector('emoji-reaction') === null){
-            item.insertAdjacentHTML('afterend', '<emoji-reaction class="emoji-reaction" style="margin-top:2%; z-index: 99999;" theme="system" availableArrayString="🎉,party-popper;😕,confused-face;❤️,red-heart;🚀,rocket;👀,eyes;"></emoji-reaction>'); 
+            item.insertAdjacentHTML('afterend', '<emoji-reaction class="emoji-reaction" style="margin-top:2%; z-index: 99999;" theme="system" availableArrayString="🎉,party-popper;😕,confused-face;❤️,red-heart;🚀,rocket;👀,eyes;"></emoji-reaction>');
         }
     })
     memoAt = document.querySelectorAll('emoji-reaction');
