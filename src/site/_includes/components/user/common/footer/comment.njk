@@ -17,7 +17,7 @@
             reaction: true,
             dark: 'auto',
         });
-</script>
+    </script>
 <hr>
 
 <div class="content" align="center">
@@ -31,6 +31,15 @@
             sentence.innerHTML = result.data.content
             info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
         });
+        // 调整 Dataview 表格
+        if (document.title === "⭐总览") {
+            var contentElement = document.querySelector(".content");
+            if (contentElement) {
+                contentElement.style.maxWidth = "1000px";
+            }
+        } else {
+            console.log(document.title);
+        }
     </script>
     <h5 class="content">2022–2023 XRYU</h5>
     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
