@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/日常学习/Obsidian，你的博客/","noteIcon":"1","created":"2023-09-20T21:35:09.212+08:00","updated":"2023-10-07T15:01:17.183+08:00"}
+{"dg-publish":true,"permalink":"/日常学习/Obsidian，你的博客/","noteIcon":"1","created":"2023-09-20T21:35:09.212+08:00","updated":"2023-10-08T09:48:41.183+08:00"}
 ---
 
 
@@ -190,7 +190,7 @@ Memos，一个记录短灵感和备忘录的开源工具，使用 docker **一�
 界面字体优化和增加表情回应[emaction.cool](https://emaction.cool/)
 
 ```javascript
-document.getElementsByTagName('head')[0].innerHTML += "<link rel=\"stylesheet\" href=\"https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/style.css\" /><style>body.font_family_lora .article_content, .title-text, .section-title, .font-mono, text-gray-400, .w-full, .tip-text, .filter-item-container  {font-family: 'LXGW WenKai Screen' !important }</style><style>body {font-family: 'LXGW WenKai Screen' }</style>"
+document.getElementsByTagName('head')[0].innerHTML += "<link rel=\"stylesheet\" href=\"https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/style.css\" /><style>body.font_family_lora .article_content, .title-text, .section-title, .mx-2, .MuiSelect-variantPlain, .font-mono, text-gray-400, .w-full, .tip-text, .filter-item-container  {font-family: 'LXGW WenKai Screen' !important }</style><style>body {font-family: 'LXGW WenKai Screen' }</style>"
 var flag = true;
 function addEmotionJS() {
     var memosEmotion = document.createElement("script");
@@ -202,10 +202,11 @@ function addEmotionJS() {
 };
 function loadEmotion() {
     if(flag) addEmotionJS();
-    var memoAt = document.querySelectorAll('.resource-wrapper');
+    // var memoAt = document.querySelectorAll('.resource-wrapper');
+    var memoAt = document.querySelectorAll('.memo-wrapper');
     memoAt.forEach(function(item, index) {
-        if(item.parentElement.querySelector('emoji-reaction') === null){
-            item.insertAdjacentHTML('afterend', '<emoji-reaction class="emoji-reaction" style="margin-top:2%; z-index: 99999;" theme="system" availableArrayString="🎉,party-popper;😕,confused-face;❤️,red-heart;🚀,rocket;👀,eyes;"></emoji-reaction>');
+        if(item.querySelector('emoji-reaction') === null){
+            item.lastElementChild.insertAdjacentHTML('beforebegin', '<emoji-reaction class="emoji-reaction" style="margin-top:2.3%; margin-bottom: -0.3%;" theme="system" availableArrayString="🎉,party-popper;😕,confused-face;❤️,red-heart;🚀,rocket;👀,eyes;"></emoji-reaction>');
         }
     })
     memoAt = document.querySelectorAll('emoji-reaction');
@@ -227,3 +228,6 @@ var start = setInterval(function(){
 
 表情回应效果图如下：
 ![image.png](https://s2.loli.net/2023/09/25/oRdGvSEKn14hOX3.png)
+
+> [!success]+ 2023.10.07 补充
+> memos 更新后的 1.6 版本已经加入了评论功能。
