@@ -35,7 +35,21 @@
         if (document.title === "⭐总览") {
             var contentElement = document.querySelector(".content");
             if (contentElement) {
-                contentElement.style.maxWidth = "1000px";
+                contentElement.style.maxWidth = "1100px";
+            }
+            contentElement = document.querySelector(".dataview");
+            if (contentElement) {
+                var cells = contentElement.querySelectorAll('td, th');
+                cells.forEach(function(cell) {
+                    cell.style.textAlign = 'center'; // 设置文字水平居中
+                    cell.style.verticalAlign = 'middle'; // 设置文字垂直居中
+                });
+                var firstColumnCells = contentElement.querySelectorAll('td:first-child, th:first-child');
+                var firstColumnWidth = '20%';
+                for (var i = 0; i < firstColumnCells.length; i++) {
+                    firstColumnCells[i].style.width = firstColumnWidth;
+                    firstColumnCells[i].style.maxWidth = firstColumnWidth; // 设置最大宽度
+                }
             }
         }
     </script>
