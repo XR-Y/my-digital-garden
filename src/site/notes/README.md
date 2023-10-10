@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/README/","title":"Welcome!","pinned":true,"tags":["home","gardenEntry","gardenEntry","gardenEntry"],"noteIcon":"1","created":"2023-07-14T17:22:00.770+08:00","updated":"2023-10-07T15:20:55.236+08:00"}
+{"dg-publish":true,"permalink":"/README/","title":"Welcome!","pinned":true,"tags":["home","gardenEntry","gardenEntry","gardenEntry","gardenEntry"],"noteIcon":"1","created":"2023-07-14T17:22:00.770+08:00","updated":"2023-10-07T15:20:55.236+08:00"}
 ---
 
 
@@ -7,7 +7,7 @@
 
 👋 游客朋友，欢迎光临！
 
-<p><span>👏 创建 31 篇文档，共 117731 字，写完一本 鲁迅 的《彷徨》了！</span></p>
+<p><span>👏 创建 31 篇文档，共 118174 字，写完一本 鲁迅 的《彷徨》了！</span></p>
 
 - 🤔 关于我
   - NJU SE 在读 📖
