@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/日常学习/obsidian食用指南/","tags":["Software"],"noteIcon":"1","created":"2023-07-14T17:23:36.118+08:00","updated":"2023-09-17T16:47:05.159+08:00"}
+{"dg-publish":true,"permalink":"/日常学习/obsidian食用指南/","tags":["Software"],"noteIcon":"1","created":"2023-07-14T17:23:36.118+08:00","updated":"2023-10-11T12:49:01.400+08:00"}
 ---
 
 
@@ -199,8 +199,10 @@ PDF 批注插件，使用时需要注意尽量不要更改 PDF 文件的位置�
 obsidian 白嫖发布的终极解决方案！可以自由选择需要发布的文档，支持 callouts，支持 obsidian 内各种主题展示。具体流程借助 Github 仓库和 Vercel 服务部署，一键式轻松发布，基本替代了博客，不再需要将文章搬运到博客服务或者折腾复杂易错的联动流程。
 
 > [!help]+ 当前 Vercel 服务对应域名污染严重 ❌，国内访问不友好。
-> 解决方案：💸 购买一个域名，同时在 Vercel 服务的基础上加一层 Cloudflare CDN，即可实现在可以接受的速度下访问发布的笔记，同时域名还是自有域名，完美。
+> 解决方案：💸 购买一个域名，同时在 Vercel 服务的基础上加一层 Cloudflare CDN（**需要全代理，而不能仅 DNS 解析**），即可实现在可以接受的速度下访问发布的笔记，同时域名还是自有域名，完美。
 > 另外，Digital Garden 支持自定义插件，因此可以使用 Waline 作为 💬 评论系统插件，不过无备案采用国际版的话同样需要 Vercel 服务的基础上增加一层 Cloudflare CDN。
+
+> [!success] 最新版本基本完全支持 Dataview 插件下的原样呈现发布，🫡致敬！
 
 ## 博客衍生
 
@@ -215,6 +217,8 @@ obsidian 白嫖发布的终极解决方案！可以自由选择需要发布的�
 ### Reading Time
 
 根据笔记字符数或词数估计阅读时间 ⏳，博客的必备功能之一。
+>[!info]+ 2023.10.11 更新
+> Novel Word Count 更新已包含预估阅读时长，Reading Time 插件已失去意义。
 
 ### Chronology
 
