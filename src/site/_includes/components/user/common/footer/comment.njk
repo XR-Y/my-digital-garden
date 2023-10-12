@@ -21,6 +21,7 @@
 <hr>
 
 <div class="content" align="center">
+    <img alt="今日诗词" src="https://v2.jinrishici.com/one.svg?font-size=20&color=LightSlateGray">
     <h4 id="jinrishici-sentence" class="content">正在加载今日诗词....</h4>
     <span id="poem_info"></span>
     <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
@@ -35,7 +36,7 @@
         if (document.title === "⭐总览") {
             var contentElement = document.querySelector(".content");
             if (contentElement) {
-                contentElement.style.maxWidth = "1100px";
+                contentElement.style.maxWidth = "1000px";
             }
             contentElement = document.querySelector(".dataview");
             if (contentElement) {
@@ -45,7 +46,7 @@
                     cell.style.verticalAlign = 'middle'; // 设置文字垂直居中
                 });
                 var firstColumnCells = contentElement.querySelectorAll('td:first-child, th:first-child');
-                var firstColumnWidth = '20%';
+                var firstColumnWidth = '22%';
                 for (var i = 0; i < firstColumnCells.length; i++) {
                     firstColumnCells[i].style.width = firstColumnWidth;
                     firstColumnCells[i].style.maxWidth = firstColumnWidth; // 设置最大宽度
