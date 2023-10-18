@@ -57,31 +57,34 @@
                 contentElement.style.display = "none";
             }
         }
+        // 无评论时显示随机内容
         var start = setInterval(function(){
-            emptyElement = document.querySelector(".wl-empty")
+            var emptyElement = document.querySelector(".wl-empty");
             if (emptyElement) {
-                fetch('https://v1.hitokoto.cn')
+                fetch('https://v1.hitokoto.cn?c=d&c=h&c=i&c=k')
                 .then(response => response.json())
                 .then(data => {
-                    emptyElement.href = `https://hitokoto.cn/?uuid=${data.uuid}`
                     emptyElement.innerText = data.hitokoto
                     clearInterval(start)
                     var switchOne = setInterval(function(){
-                        emptyElement = document.querySelector(".wl-empty")
+                        emptyElement = document.querySelector(".wl-empty");
+                        var comments = document.querySelector(".wl-card-item");
                         if (emptyElement) {
-                            fetch('https://v1.hitokoto.cn')
+                            fetch('https://v1.hitokoto.cn?c=d&c=h&c=i&c=k')
                             .then(response => response.json())
                             .then(data => {
-                                emptyElement.href = `https://hitokoto.cn/?uuid=${data.uuid}`
                                 emptyElement.innerText = data.hitokoto
                             })
                             .catch(console.error)
                         }
-                    }, 10000)
+                        else if(!comments) {
+                            clearInterval(switchOne);
+                        }
+                    }, 5000)
                 })
                 .catch(console.error)
             }
-        }, 1500)
+        }, 1500);
     </script>
     <hr>
     <span class="content">2022–2023 XRYU</span>
