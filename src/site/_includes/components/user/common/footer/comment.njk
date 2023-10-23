@@ -33,7 +33,7 @@
                 var sentence = document.querySelector("#jinrishici-sentence")
                 sentence.innerText = data.content;
                 var info = document.querySelector("#poem_info")
-                info.innerText = result.data.author + '《' + result.data.origin + '》'
+                info.innerText = data.author + '《' + data.origin + '》'
             }
         };
         xhr.send();
