@@ -24,14 +24,19 @@
     <div id="jinrishici-sentence" class="content" style="color: #778899; font-size: 24px; font-family: KaiTi, 'LXGW WenKai Screen';">正在加载今日诗词....</div>
     <br>
     <span id="poem_info" style="font-size:17px; color: #778899; font-family: KaiTi, 'LXGW WenKai Screen';"></span>
-    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
     <script type="text/javascript">
-        jinrishici.load(function(result) {
-            var sentence = document.querySelector("#jinrishici-sentence")
-            var info = document.querySelector("#poem_info")
-            sentence.innerHTML = result.data.content
-            info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
-        });
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v1.jinrishici.com/all.json');
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                var data = JSON.parse(xhr.responseText);
+                var sentence = document.querySelector("#jinrishici-sentence")
+                sentence.innerText = data.content;
+                var info = document.querySelector("#poem_info")
+                info.innerText = result.data.author + '《' + result.data.origin + '》'
+            }
+        };
+        xhr.send();
         // 调整 Dataview 表格
         if (document.title === "⭐总览") {
             var contentElement = document.querySelector(".content");
