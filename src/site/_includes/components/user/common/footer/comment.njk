@@ -54,7 +54,7 @@
                 document.querySelector(".table-wrapper").style.overflowX = "hidden";
                 var firstColumnCells = contentElement.querySelectorAll('.external-link');
                 for (var i = 0; i < firstColumnCells.length; i++) {
-                    firstColumnCells[i].style.display = "none";
+                    firstColumnCells[i].classList.remove("external-link");
                 }
             }
             contentElement = document.querySelector("#wordCount");
