@@ -52,12 +52,10 @@
                     cell.style.verticalAlign = 'middle'; // 设置文字垂直居中
                 });
                 document.querySelector(".table-wrapper").style.overflowX = "hidden";
-                // var firstColumnCells = contentElement.querySelectorAll('td:first-child, th:first-child');
-                // var firstColumnWidth = '20%';
-                // for (var i = 0; i < firstColumnCells.length; i++) {
-                    // firstColumnCells[i].style.width = firstColumnWidth;
-                    // firstColumnCells[i].style.maxWidth = firstColumnWidth; // 设置最大宽度
-                // }
+                var firstColumnCells = contentElement.querySelectorAll('.external-link');
+                for (var i = 0; i < firstColumnCells.length; i++) {
+                    firstColumnCells[i].style.display = "none";
+                }
             }
             contentElement = document.querySelector("#wordCount");
             if (contentElement) {
