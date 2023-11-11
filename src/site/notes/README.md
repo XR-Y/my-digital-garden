@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/README/","title":"Welcome!","pinned":true,"tags":["home","gardenEntry","gardenEntry","gardenEntry"],"noteIcon":"1","created":"2023-07-14T17:22:00.770+08:00","updated":"2023-10-27T19:19:08.726+08:00"}
+{"dg-publish":true,"permalink":"/README/","title":"Welcome!","pinned":true,"tags":["home","gardenEntry"],"noteIcon":"1","created":"2023-07-14T17:22:00.770+08:00","updated":"2023-11-11T21:53:58.447+08:00"}
 ---
 
 
@@ -14,7 +14,7 @@
   - 可以在[GitHub](https://github.com/XR-Y)找到我 👈
   - 实用主义践行者 🙌
   - 在极简主义和花里胡哨之间反复横跳 🤹
-  - MBTI：INTJ-A，荣格八维：ISTJ/ESTJ/INTJ 🙋‍♂️
+  - MBTI：INTJ-A，荣格八维：ISTJ/ENTJ/INTP 🙋‍♂️
   - 随缘更新，佛系研学，率性生活 🎉
   - 另外，欢迎访问[【记忆碎片】](https://memos.xryu.top)计划 👀
 - 🌏 关于本站
