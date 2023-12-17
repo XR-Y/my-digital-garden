@@ -65,6 +65,18 @@
             if (contentElement) {
                 contentElement.style.display = "none";
             }
+            contentElement = document.querySelectorAll("img");
+            if (contentElement) {
+                contentElement.forEach(function(img) {
+                    img.style.padding = '0';
+                });
+            }
+            contentElement = document.querySelectorAll(".tag");
+            if (contentElement) {
+                contentElement.forEach(function(tag) {
+                    tag.style.backgroundColor = 'none';
+                });
+            }
         }
         // 无评论时显示随机内容
         var start = setInterval(function(){
