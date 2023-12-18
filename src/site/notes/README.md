@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/README/","title":"Welcome!","pinned":true,"tags":["home","gardenEntry"],"noteIcon":"1","created":"2023-07-14T17:22:00.770+08:00","updated":"2023-11-11T21:55:13.951+08:00"}
+{"dg-publish":true,"permalink":"/README/","title":"Welcome!","pinned":true,"tags":["home","gardenEntry","gardenEntry"],"noteIcon":"1","created":"2023-07-14T17:22:00.770+08:00","updated":"2023-11-11T21:55:13.951+08:00"}
 ---
 
 
@@ -7,7 +7,7 @@
 
 👋 游客朋友，欢迎光临！
 
-<p><span>👏 创建 41 篇文档，共 171191 字，写完一本 萧红 的《呼兰河传》了！</span></p>
+<p><span>👏 创建 41 篇文档，共 171206 字，写完一本 萧红 的《呼兰河传》了！</span></p>
 
 - 🤔 关于我
   - 西南土著，NJU SE 在读 📖
