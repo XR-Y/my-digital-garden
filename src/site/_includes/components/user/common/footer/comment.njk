@@ -37,6 +37,10 @@
             }
         };
         xhr.send();
+        // 调整首页表格
+        if (document.title === "Welcome!") {
+            document.querySelector(".table-wrapper").style.overflowX = "hidden"; // 隐藏横向滚动条
+        }
         // 调整 Dataview 表格
         if (document.title === "⭐总览") {
             var contentElement = document.querySelector(".content");
@@ -51,7 +55,7 @@
                     cell.style.textAlign = 'center'; // 设置文字水平居中
                     cell.style.verticalAlign = 'middle'; // 设置文字垂直居中
                 });
-                document.querySelector(".table-wrapper").style.overflowX = "hidden";
+                document.querySelector(".table-wrapper").style.overflowX = "hidden"; // 隐藏横向滚动条
                 var firstColumnCells = contentElement.querySelectorAll('.external-link');
                 for (var i = 0; i < firstColumnCells.length; i++) {
                     firstColumnCells[i].classList.remove("external-link");
