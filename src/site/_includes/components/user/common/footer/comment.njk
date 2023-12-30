@@ -82,6 +82,16 @@
                 });
             }
         }
+        // 调整只有标题的callout
+        contentElement = document.querySelectorAll('.callout-content');
+        contentElement.forEach((div) => {
+            const paragraphs = div.querySelectorAll('p');
+            paragraphs.forEach((p) => {
+                if (p.textContent.trim() === '') {
+                    div.style.display = 'none';
+                }
+            });
+        });
         // 无评论时显示随机内容
         var start = setInterval(function(){
             var emptyElement = document.querySelector(".wl-empty");
@@ -113,8 +123,8 @@
     </script>
     <hr>
     <span class="content">2022–2023 XRYU</span>
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    {# <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <div style="display: none;">
         <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
-    </div>
+    </div> #}
 </div>
