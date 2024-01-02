@@ -83,15 +83,15 @@
             }
         }
         // 调整只有标题的callout
-        contentElement = document.querySelectorAll('.callout-content');
-        contentElement.forEach((div) => {
-            const paragraphs = div.querySelectorAll('p');
-            paragraphs.forEach((p) => {
-                if (p.textContent.trim() === '') {
-                    div.style.display = 'none';
-                }
-            });
-        });
+        contentElements = document.querySelectorAll('.callout-content');
+        titleElements = document.querySelectorAll('.callout-title');
+        for (var i = 0; i < contentElements.length; i++) {
+            const paragraph = contentElements[i].querySelector('p');
+            if (paragraph.textContent.trim() === '') {
+                contentElements[i].style.display = 'none';
+                titleElements[i].style.border = 'none';
+            }
+        }
         // 无评论时显示随机内容
         var start = setInterval(function(){
             var emptyElement = document.querySelector(".wl-empty");
