@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/README/","title":"Welcome!","pinned":true,"tags":["home","gardenEntry","gardenEntry","gardenEntry"],"noteIcon":"1","created":"2023-07-14T17:22:00.770+08:00","updated":"2023-12-27T17:25:36.868+08:00"}
+{"dg-publish":true,"permalink":"/README/","title":"Welcome!","pinned":true,"tags":["home","gardenEntry","gardenEntry","gardenEntry","gardenEntry"],"noteIcon":"1","created":"2023-07-14T17:22:00.770+08:00","updated":"2023-12-27T17:25:36.868+08:00"}
 ---
 
 
@@ -7,7 +7,7 @@
 
 👋 游客朋友，欢迎光临！
 
-<p><span>👏 创建 45 篇文档，共 191958 字，写完一本 卡勒德·胡塞尼 的《追风筝的人》了！</span></p>
+<p><span>👏 创建 45 篇文档，共 191973 字，写完一本 卡勒德·胡塞尼 的《追风筝的人》了！</span></p>
 
 - 🤔 关于我
   - 西南土著，NJU SE 在读 📖
