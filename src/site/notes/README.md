@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/README/","title":"Welcome!","pinned":true,"tags":["home","gardenEntry","gardenEntry"],"noteIcon":"1","created":"2023-07-14T17:22:00.770+08:00","updated":"2023-12-27T17:25:36.868+08:00"}
+{"dg-publish":true,"permalink":"/README/","title":"Welcome!","pinned":true,"tags":["home","gardenEntry","gardenEntry","gardenEntry"],"noteIcon":"1","created":"2023-07-14T17:22:00.770+08:00","updated":"2023-12-27T17:25:36.868+08:00"}
 ---
 
 
@@ -31,10 +31,10 @@
 
 | 文章详情                                             | 最后更新       |
 | ------------------------------------------------ | ---------- |
+| [[微信读书/⭐总览\|微信读书/⭐总览.md]]                     | 2024-01-07 |
 | [[心血来潮/年度盘点/2023冇钱实录\|心血来潮/年度盘点/2023冇钱实录.md]] | 2024-01-06 |
 | [[大事记/2024\|大事记/2024.md]]                     | 2024-01-04 |
 | [[大事记/2023\|大事记/2023.md]]                     | 2024-01-04 |
 | [[日常学习/Obsidian，你的博客\|日常学习/Obsidian，你的博客.md]] | 2024-01-03 |
-| [[心血来潮/年度盘点/2023 拐点\|心血来潮/年度盘点/2023 拐点.md]]   | 2024-01-03 |
 
 { .block-language-dataview}
