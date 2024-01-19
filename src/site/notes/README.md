@@ -1,13 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/README/","title":"Welcome!","pinned":true,"tags":["home","gardenEntry"],"noteIcon":"1","created":"2023-07-14T17:22:00.770+08:00","updated":"2024-01-18T11:59:45.160+08:00"}
+{"dg-publish":true,"permalink":"/README/","title":"Welcome!","pinned":true,"tags":["home","gardenEntry"],"noteIcon":"1","created":"2023-07-14T17:22:00.770+08:00","updated":"2024-01-19T11:58:38.951+08:00"}
 ---
-
-
-> [!cite] 把诗书马上，笑驱锋镝。✍️
 
 👋 游客朋友，欢迎光临！
 
-<p><span>👏 创建 46 篇文档，共 195756 字，写完一本 卡勒德·胡塞尼 的《追风筝的人》了！</span></p>
+<p><span>👏 创建 46 篇文档，共 195752 字，写完一本 卡勒德·胡塞尼 的《追风筝的人》了！</span></p>
 
 - 🤔 关于我
   - 西南土著，NJU SE 在读 📖
