@@ -1,10 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/README/","title":"Welcome!","pinned":true,"tags":["home","gardenEntry","gardenEntry","gardenEntry","gardenEntry"],"noteIcon":"1","created":"2023-07-14T17:22:00.770+08:00","updated":"2024-01-19T11:58:38.951+08:00"}
+{"dg-publish":true,"permalink":"/README/","title":"Welcome!","pinned":true,"tags":["home","gardenEntry"],"noteIcon":"1","created":"2023-07-14T17:22:00.770+08:00","updated":"2024-03-11T19:52:14.486+08:00"}
 ---
 
 👋 游客朋友，欢迎光临！
 
-<p><span>👏 创建 47 篇文档，共 202665 字，写完一本 刘慈欣 的《三体》了！</span></p>
+<p><span>👏 创建 47 篇文档，共 202666 字，写完一本 刘慈欣 的《三体Ⅰ》了！</span></p>
 
 - 🤔 关于我
   - 西南土著，NJU SE 在读 📖
