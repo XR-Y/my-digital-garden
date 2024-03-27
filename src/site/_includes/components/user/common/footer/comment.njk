@@ -94,33 +94,41 @@
             }
         }
         // 无评论时显示随机内容
-        var start = setInterval(function(){
-            var emptyElement = document.querySelector(".wl-empty");
-            if (emptyElement) {
-                fetch('https://cors-anywhere.herokuapp.com/https://v1.hitokoto.cn?c=d&c=h&c=i&c=k')
-                .then(response => response.json())
-                .then(data => {
-                    emptyElement.innerText = data.hitokoto
-                    clearInterval(start)
-                    var switchOne = setInterval(function(){
+        var start = setInterval(function() {
+        var emptyElement = document.querySelector(".wl-empty");
+        if (emptyElement) {
+            xhr.open('GET', 'https://v1.hitokoto.cn?c=d&c=h&c=i&c=k');
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    var data = JSON.parse(xhr.responseText);
+                    emptyElement.innerText = data.hitokoto;
+                    clearInterval(start);
+                    var switchOne = setInterval(function() {
                         emptyElement = document.querySelector(".wl-empty");
                         var comments = document.querySelector(".wl-card-item");
                         if (emptyElement) {
-                            fetch('https://cors-anywhere.herokuapp.com/https://v1.hitokoto.cn?c=d&c=h&c=i&c=k')
-                            .then(response => response.json())
-                            .then(data => {
-                                emptyElement.innerText = data.hitokoto
-                            })
-                            .catch(console.error)
-                        }
-                        else if(!comments) {
+                            var xhr2 = new XMLHttpRequest();
+                            xhr2.open('GET', 'https://v1.hitokoto.cn?c=d&c=h&c=i&c=k');
+                            xhr2.onload = function() {
+                                if (xhr2.status === 200) {
+                                    var data = JSON.parse(xhr2.responseText);
+                                    emptyElement.innerText = data.hitokoto;
+                                } else {
+                                    console.error('Request failed.  Returned status of ' + xhr2.status);
+                                }
+                            };
+                            xhr2.send();
+                        } else if (!comments) {
                             clearInterval(switchOne);
                         }
-                    }, 5000)
-                })
-                .catch(console.error)
-            }
-        }, 1500);
+                    }, 5000);
+                } else {
+                    console.error('Request failed.  Returned status of ' + xhr.status);
+                }
+            };
+            xhr.send();
+        }
+    }, 1500);
     </script>
     <div class="content" style="color: #999999; font-size: 1rem;">
         <span>📌 Powered by Obsidian Digital Garden and Vercel</span>
