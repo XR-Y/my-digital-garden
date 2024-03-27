@@ -1,8 +1,7 @@
 <span id="wordCount" style="color: var(--text-muted); font-size:14px;"></span>
 <div class="post-ai">
     <div class="ai-title">
-        <i class="fas fa-robot ai-title-icon"></i>
-        <div class="ai-title-text">AI 摘要</div>
+        <div class="ai-title-text">🤖 AI 摘要</div>
     </div>
     <div id="ai-explanation" class="ai-explanation"></div>
     <div class="ai-explanation ai-explanation-content">
@@ -26,8 +25,11 @@
   });
 
   document.addEventListener("DOMContentLoaded", function () {
-    // 从 .ai-explanation-content 取值
-    const matchingSummary = document.querySelector(".ai-explanation-content").textContent;
+    if (document.querySelector("#summary") === null) {
+        document.querySelector(".post-ai").style.display = "none";
+    }
+    const matchingSummary = document.querySelector("#summary").textContent;
+    // const matchingSummary = document.querySelector(".ai-explanation-content").textContent;
 
     new TypeIt("#ai-explanation", {
         strings: matchingSummary,

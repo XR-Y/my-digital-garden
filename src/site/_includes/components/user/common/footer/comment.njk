@@ -97,7 +97,7 @@
         var start = setInterval(function(){
             var emptyElement = document.querySelector(".wl-empty");
             if (emptyElement) {
-                fetch('https://v1.hitokoto.cn?c=d&c=h&c=i&c=k')
+                fetch('https://cors-anywhere.herokuapp.com/https://v1.hitokoto.cn?c=d&c=h&c=i&c=k')
                 .then(response => response.json())
                 .then(data => {
                     emptyElement.innerText = data.hitokoto
@@ -106,7 +106,7 @@
                         emptyElement = document.querySelector(".wl-empty");
                         var comments = document.querySelector(".wl-card-item");
                         if (emptyElement) {
-                            fetch('https://v1.hitokoto.cn?c=d&c=h&c=i&c=k')
+                            fetch('https://cors-anywhere.herokuapp.com/https://v1.hitokoto.cn?c=d&c=h&c=i&c=k')
                             .then(response => response.json())
                             .then(data => {
                                 emptyElement.innerText = data.hitokoto
