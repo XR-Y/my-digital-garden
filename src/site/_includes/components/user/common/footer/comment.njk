@@ -100,10 +100,10 @@
         var start = setInterval(function() {
         var emptyElement = document.querySelector(".wl-empty");
         if (emptyElement) {
-            xhr.open('GET', 'https://v1.hitokoto.cn?c=d&c=h&c=i&c=k');
-            xhr.onload = function() {
-                if (xhr.status === 200) {
-                    var data = JSON.parse(xhr.responseText);
+            var xhr1.open('GET', 'https://v1.hitokoto.cn?c=d&c=h&c=i&c=k');
+            xhr1.onload = function() {
+                if (xhr1.status === 200) {
+                    var data = JSON.parse(xhr1.responseText);
                     emptyElement.innerText = data.hitokoto;
                     clearInterval(start);
                     var switchOne = setInterval(function() {
@@ -126,10 +126,10 @@
                         }
                     }, 5000);
                 } else {
-                    console.error('Request failed.  Returned status of ' + xhr.status);
+                    console.error('Request failed.  Returned status of ' + xhr1.status);
                 }
             };
-            xhr.send();
+            xhr1.send();
         }
     }, 1500);
     </script>

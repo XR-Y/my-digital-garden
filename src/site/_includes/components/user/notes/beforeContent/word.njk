@@ -1,5 +1,5 @@
 <span id="wordCount" style="color: var(--text-muted); font-size:14px;"></span>
-<div class="post-ai">
+<div class="post-ai" style="display: none;">
     <div class="ai-title">
         <div class="ai-title-text">🤖 AI 摘要</div>
     </div>
@@ -25,8 +25,8 @@
   });
 
   document.addEventListener("DOMContentLoaded", function () {
-    if (document.querySelector("#summary") === null) {
-        document.querySelector(".post-ai").style.display = "none";
+    if (document.querySelector("#summary") !== null) {
+        document.querySelector(".post-ai").style.display = "block";
     }
     const matchingSummary = document.querySelector("#summary").textContent;
 
