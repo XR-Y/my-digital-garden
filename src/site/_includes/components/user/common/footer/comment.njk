@@ -100,7 +100,8 @@
         var start = setInterval(function() {
         var emptyElement = document.querySelector(".wl-empty");
         if (emptyElement) {
-            var xhr1.open('GET', 'https://v1.hitokoto.cn?c=d&c=h&c=i&c=k');
+            var xhr1 = new XMLHttpRequest();
+            xhr1.open('GET', 'https://v1.hitokoto.cn?c=d&c=h&c=i&c=k');
             xhr1.onload = function() {
                 if (xhr1.status === 200) {
                     var data = JSON.parse(xhr1.responseText);

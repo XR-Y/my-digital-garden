@@ -28,7 +28,7 @@
     if (document.querySelector("#summary") !== null) {
         document.querySelector(".post-ai").style.display = "block";
     }
-    const matchingSummary = document.querySelector("#summary").textContent;
+    const matchingSummary = document.querySelector("#summary").textContent.trim();
 
     new TypeIt("#ai-explanation", {
         strings: matchingSummary,
