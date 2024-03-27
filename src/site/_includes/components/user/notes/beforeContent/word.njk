@@ -1,4 +1,15 @@
 <span id="wordCount" style="color: var(--text-muted); font-size:14px;"></span>
+<div class="post-ai">
+    <div class="ai-title">
+        <i class="fas fa-robot ai-title-icon"></i>
+        <div class="ai-title-text">AI 摘要</div>
+    </div>
+    <div id="ai-explanation" class="ai-explanation"></div>
+    <div class="ai-explanation ai-explanation-content">
+        AI 摘要接口暂时失联……
+    </div>
+</div>
+
 <script type="text/javascript">
   document.addEventListener("DOMContentLoaded", function() {
     var count = 0; // 统计字数
@@ -11,5 +22,17 @@
     count = str.length;
     var time = Math.max(Math.floor(count / 400), 1);
     document.querySelector("#wordCount").innerHTML = String.fromCodePoint("0x1F4D6") + '本文约 ' + count + ' 字，预计阅读时间 ' + time + ' 分钟。';
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // 从 .ai-explanation-content 取值
+    const matchingSummary = document.querySelector(".ai-explanation-content").textContent;
+
+    new TypeIt("#ai-explanation", {
+        strings: matchingSummary,
+        speed: 50,
+        lifeLike: true,
+        waitUntilVisible: true,
+    }).go();
   });
 </script>
