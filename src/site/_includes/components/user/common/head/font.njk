@@ -384,6 +384,9 @@
 </style>
 
 <script>
+    if (document.querySelector("#summary") !== null) {
+        document.querySelector("#summary").style.display = "none";
+    }
     const darkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)'); 
     document.addEventListener("DOMContentLoaded", function() {
         // 判断是否匹配深色模式 

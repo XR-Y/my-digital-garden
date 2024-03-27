@@ -4,7 +4,7 @@
         <div class="ai-title-text">🤖 AI 摘要</div>
     </div>
     <div id="ai-explanation" class="ai-explanation"></div>
-    <div class="ai-explanation ai-explanation-content">
+    <div class="ai-explanation">
         AI 摘要接口暂时失联……
     </div>
 </div>
@@ -29,8 +29,6 @@
         document.querySelector(".post-ai").style.display = "none";
     }
     const matchingSummary = document.querySelector("#summary").textContent;
-    document.querySelector("#summary").style.display = "none";
-    // const matchingSummary = document.querySelector(".ai-explanation-content").textContent;
 
     new TypeIt("#ai-explanation", {
         strings: matchingSummary,
