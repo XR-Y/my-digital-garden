@@ -25,6 +25,9 @@
     <br>
     <span id="poem_info" style="font-size:17px; color: #778899; font-family: KaiTi, 'LXGW WenKai Screen';"></span>
     <script type="text/javascript">
+        if (document.querySelector("#summary") !== null) {
+            document.querySelector("#summary").style.display = "none";
+        }
         var xhr = new XMLHttpRequest();
         xhr.open('get', 'https://v1.jinrishici.com/all.json');
         xhr.onreadystatechange = function () {
