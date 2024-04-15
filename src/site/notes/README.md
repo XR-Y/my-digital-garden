@@ -4,7 +4,7 @@
 
 👋 游客朋友，欢迎光临！
 
-<p><span><img class="emoji" draggable="false" alt="👏" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f44f.svg" width="16px" height="16px"> 创建 47 篇文档，共 213280 字，写完一本 老舍 的《骆驼祥子》了！</span></p>
+<p><span>👏 创建 47 篇文档，共 213280 字，写完一本 老舍 的《骆驼祥子》了！</span></p>
 
 - 🤔 关于我
   - 西南土著，NJU SE 在读 📖
