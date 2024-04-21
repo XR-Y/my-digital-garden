@@ -1,10 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/README/","title":"Welcome!","pinned":true,"tags":["home","gardenEntry"],"noteIcon":"1","created":"2023-07-14T17:22:00.770+08:00","updated":"2024-04-12T13:57:41.084+08:00"}
+{"dg-publish":true,"permalink":"/README/","title":"Welcome!","pinned":true,"tags":["home","gardenEntry","gardenEntry"],"noteIcon":"1","created":"2023-07-14T17:22:00.770+08:00","updated":"2024-04-12T13:57:41.084+08:00"}
 ---
 
 👋 游客朋友，欢迎光临！
 
-<p><span>👏 创建 47 篇文档，共 213403 字，写完一本 老舍 的《骆驼祥子》了！</span></p>
+<p><span>👏 创建 47 篇文档，共 213424 字，写完一本 老舍 的《骆驼祥子》了！</span></p>
 
 - 🤔 关于我
   - 西南土著，NJU SE 在读 📖
