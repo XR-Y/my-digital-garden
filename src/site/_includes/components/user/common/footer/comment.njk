@@ -97,6 +97,11 @@
                 titleElements[i].style.border = 'none';
             }
         }
+        // 调整目录高度
+        var tocElement = document.querySelector('.toc-container');
+        if (tocElement) {
+            tocElement.style.maxWidth = '50%';
+        }
         // 无评论时显示随机内容
         var start = setInterval(function() {
         var emptyElement = document.querySelector(".wl-empty");
