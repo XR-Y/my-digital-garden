@@ -98,9 +98,13 @@
             }
         }
         // 调整目录高度
+        var tocElement = document.querySelector('.sidebar');
+        if (tocElement) {
+            tocElement.style.maxHeight = '75%';
+        }
         var tocElement = document.querySelector('.toc-container');
         if (tocElement) {
-            tocElement.style.maxHeight = '50%';
+            tocElement.style.maxHeight = '100%';
         }
         // 无评论时显示随机内容
         var start = setInterval(function() {
