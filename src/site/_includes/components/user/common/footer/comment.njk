@@ -1,3 +1,6 @@
+<div class="rightside fixed bottom-20 right-2 w-10">
+    <button>Top</button>
+</div>
 <hr class="content">
 <div class="content" id="waline"></div>
 <link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css"/>
@@ -25,6 +28,17 @@
     <div id="jinrishici-sentence" class="content" style="color: #778899; font-size: 24px; font-family: KaiTi, 'LXGW WenKai Screen';">正在加载今日诗词....</div>
     <br>
     <span id="poem_info" style="font-size:17px; color: #778899; font-family: KaiTi, 'LXGW WenKai Screen';"></span>
+    <script>
+        /**
+        * 按钮点击后，滚动将以平滑的动画方式进行
+        */
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
     <script type="text/javascript">
         if (document.querySelector("#summary") !== null) {
             document.querySelector("#summary").style.display = "none";
@@ -41,6 +55,21 @@
             }
         };
         xhr.send();
+        // 返回顶部按钮
+        const topButton = document.getElementById("topButton");
+        // 监听页面滚动事件
+        window.onscroll = function () {
+            // 获取页面滚动距离
+            const scrollY = window.scrollY;
+            // 如果页面没有滚动或者滚动条还在页面的顶端，隐藏按钮
+            if (scrollY < 500) {
+                topButton.classList.remove("block");
+                topButton.classList.add("hidden");
+            } else {
+                topButton.classList.remove("hidden");
+                topButton.classList.add("block");
+            }
+        };
         // 调整首页表格
         if (document.title === "Welcome!") {
             document.querySelector(".table-wrapper").style.overflowX = "hidden"; // 隐藏横向滚动条
