@@ -1,21 +1,13 @@
 <hr class="content">
-<div class="content" id="waline"></div>
-<link rel="stylesheet" href="https://s4.zstatic.net/npm/@waline/client@v3/dist/waline.css"/>
 
-<hr class="content">
-<div class="content" id="waline"></div>
-<script type="module">
-    import { init } from 'https://s4.zstatic.net/npm/@waline/client@v3/dist/waline.js';
-    init({
-        el: '#waline',
-        serverURL: 'https://waline.xryuu.com',
-        emoji: [
-            '//unpkg.com/@waline/emojis@1.2.0/tw-emoji',
-            '//unpkg.com/@waline/emojis@1.2.0/weibo',
-        ],
-        reaction: true,
-        dark: 'auto',
-    });
+<div id="tcomment"></div>
+<script src="https://s4.zstatic.net/ajax/libs/twikoo/1.6.39/twikoo.min.js"></script>
+<script>
+    twikoo.init({
+        envId: 'https://tmemos.netlify.app/.netlify/functions/twikoo',
+        el: '#tcomment',
+
+    })
 </script>
 <hr>
 
