@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/日常学习/Obsidian你的博客/","title":"Obsidian你的博客","tags":["Obsidian"],"noteIcon":"1","created":"2023-09-20T21:35:09.212+08:00","updated":"2024-09-25T00:03:15.635+08:00"}
+{"dg-publish":true,"permalink":"/日常学习/Obsidian你的博客/","title":"Obsidian你的博客","tags":["Obsidian","折腾"],"noteIcon":"1","created":"2023-09-20T21:35:09.212+08:00","updated":"2024-09-26T21:26:56.759+08:00"}
 ---
 
 
