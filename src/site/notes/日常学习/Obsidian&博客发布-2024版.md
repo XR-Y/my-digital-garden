@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/日常学习/Obsidian&博客发布-2024版/","title":"Obsidian&博客发布-2024版","tags":["Obsidian","折腾"],"noteIcon":"1","created":"2024-09-22T23:36:09.429+08:00","updated":"2024-09-26T22:44:28.271+08:00"}
+{"dg-publish":true,"permalink":"/日常学习/Obsidian&博客发布-2024版/","title":"Obsidian&博客发布-2024版","tags":["Obsidian","折腾"],"noteIcon":"1","created":"2024-09-22T23:36:09.429+08:00","updated":"2024-09-27T11:41:40.164+08:00"}
 ---
 
 
@@ -30,4 +30,9 @@
 众所周知意外总是接踵而至的，在我搜各种教程的时候，又意外看到了 [另一个博客](https://xaoxuu.com/wiki/stellar/)。刚开始只是觉得 Stellar 这个主题名字很让我满意，随手点开了一些示例，发现居然支持 [Memos](https://www.usememos.com/)。虽然 Memos 更新非常不稳定，但是我选择停留在 0.18.1 老版本就没有这个问题了，移动端 APP 支持是最大的优势，双端同步的短想法收集是必要的，还没有朋友圈分组的麻烦和顾虑。好的，于是我立马*自然选择号 前进四*。
 接下来就是顺利的按文档搭建迁移，整体过程在多个经验/魔改帖子的帮助下也很顺利，都列在最后的参考中了。以及 Hexo 总体还是和基本的前端三大件差不多的，这我（~~和 GPT~~）还是能信手拈来的。发布的话我还是选择 Enveloppe 插件，配置可以导入导出，和 Quartz 分开使用也行，比两个 Vault 方便。部署同样是依赖 Netlify + Cloudflare。
 最后放一张测速截图吧，甚至和备用站难分伯仲，总之就是花了一周时间彻底改造好了双线方案。一时折腾一时爽，一直折腾火葬场！
+<br>
 ![speedtest.png](https://s2.loli.net/2024/09/26/ewJxTFikEWRmuCS.png)
+
+# 回旋镖
+
+在又一次部署的时候发现意外又来了，触发了 [Netlify的身份验证](https://www.baiwulin.com/89.html)，好的，不想泄露个人信息，我现在觉得 Vercel 最好，立即跑回 Vercel 了。
