@@ -1,0 +1,173 @@
+<hr class="content">
+
+<div class="content">
+    <div id="tcomment"></div>
+</div>
+<script src="https://registry.npmmirror.com/twikoo/1.6.39/files/dist/twikoo.min.js"></script>
+<script>
+    twikoo.init({
+        envId: 'https://twikoo.xryuu.com/.netlify/functions/twikoo',
+        el: '#tcomment',
+
+    })
+</script>
+<hr>
+
+<div class="content" align="center">
+    <div id="jinrishici-sentence" class="content" style="color: #778899; font-size: 24px; font-family: KaiTi, 'LXGW WenKai Screen';">正在加载今日诗词....</div>
+    <br>
+    <span id="poem_info" style="font-size:17px; color: #778899; font-family: KaiTi, 'LXGW WenKai Screen';"></span>
+    <script type="text/javascript">
+        if (document.querySelector("#summary") !== null) {
+            document.querySelector("#summary").style.display = "none";
+        }
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v1.jinrishici.com/all.json');
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                var data = JSON.parse(xhr.responseText);
+                var sentence = document.querySelector("#jinrishici-sentence")
+                sentence.innerText = data.content;
+                var info = document.querySelector("#poem_info")
+                info.innerText = data.author + '《' + data.origin + '》'
+            }
+        };
+        xhr.send();
+        // 调整首页表格
+        if (document.title === "Welcome!") {
+            document.querySelector(".table-wrapper").style.overflowX = "hidden"; // 隐藏横向滚动条
+        }
+        // 调整 Dataview 表格
+        if (document.title === "⭐总览") {
+            var contentElement = document.querySelector(".table-wrapper");
+            if (contentElement) {
+                contentElement.style.maxWidth = "1000px";
+                contentElement.classList.add("cards");
+            }
+            contentElement = document.querySelector(".dataview");
+            if (contentElement) {
+                var cells = contentElement.querySelectorAll('td, th');
+                cells.forEach(function(cell) {
+                    cell.style.textAlign = 'center'; // 设置文字水平居中
+                    cell.style.verticalAlign = 'middle'; // 设置文字垂直居中
+                    cell.style.alignItems = 'center'; // 设置文字垂直居中
+                });
+                document.querySelector(".table-wrapper").style.overflowX = "hidden"; // 隐藏横向滚动条
+                var firstColumnCells = contentElement.querySelectorAll('.external-link');
+                for (var i = 0; i < firstColumnCells.length; i++) {
+                    firstColumnCells[i].classList.remove("external-link");
+                }
+            }
+            contentElement = document.querySelector("#wordCount");
+            if (contentElement) {
+                contentElement.style.display = "none";
+            }
+            contentElement = document.querySelector(".table-view-thead");
+            if (contentElement) {
+                contentElement.style.display = "none";
+            }
+            contentElement = document.querySelectorAll("img");
+            if (contentElement) {
+                contentElement.forEach(function(img) {
+                    img.style.padding = '0';
+                });
+            }
+            contentElement = document.querySelectorAll(".tag");
+            if (contentElement) {
+                contentElement.forEach(function(tag) {
+                    tag.style.backgroundColor = 'transparent';
+                });
+            }
+        }
+        // 调整只有标题的callout
+        contentElements = document.querySelectorAll('.callout-content');
+        titleElements = document.querySelectorAll('.callout-title');
+        for (var i = 0; i < contentElements.length; i++) {
+            const paragraph = contentElements[i].querySelector('p');
+            if (paragraph.textContent.trim() === '') {
+                contentElements[i].style.display = 'none';
+                titleElements[i].style.border = 'none';
+            }
+        }
+        // 调整目录高度
+        var tocElement = document.querySelector('.sidebar');
+        if (tocElement) {
+            tocElement.style.maxHeight = '75%';
+        }
+        var tocElement = document.querySelector('.toc-container');
+        if (tocElement) {
+            tocElement.style.maxHeight = '100%';
+        }
+        // 无评论时显示随机内容
+        var start = setInterval(function() {
+        var emptyElement = document.querySelector(".wl-empty");
+        if (emptyElement) {
+            var xhr1 = new XMLHttpRequest();
+            xhr1.open('GET', 'https://v1.hitokoto.cn?c=d&c=h&c=i&c=k');
+            xhr1.onload = function() {
+                if (xhr1.status === 200) {
+                    var data = JSON.parse(xhr1.responseText);
+                    emptyElement.innerText = data.hitokoto;
+                    clearInterval(start);
+                    var switchOne = setInterval(function() {
+                        emptyElement = document.querySelector(".wl-empty");
+                        var comments = document.querySelector(".wl-card-item");
+                        if (emptyElement) {
+                            var xhr2 = new XMLHttpRequest();
+                            xhr2.open('GET', 'https://v1.hitokoto.cn?c=d&c=h&c=i&c=k');
+                            xhr2.onload = function() {
+                                if (xhr2.status === 200) {
+                                    var data = JSON.parse(xhr2.responseText);
+                                    emptyElement.innerText = data.hitokoto;
+                                } else {
+                                    console.error('Request failed.  Returned status of ' + xhr2.status);
+                                }
+                            };
+                            xhr2.send();
+                        } else if (!comments) {
+                            clearInterval(switchOne);
+                        }
+                    }, 5000);
+                } else {
+                    console.error('Request failed.  Returned status of ' + xhr1.status);
+                }
+            };
+            xhr1.send();
+        }
+    }, 1500);
+    </script>
+    <div class="content" style="color: #999999; font-size: 1rem;">
+        <span>📌 Powered by Obsidian Digital Garden and Vercel</span>
+        <br>
+        <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+    </div>
+    <script language="javascript"> 
+        var now = new Date();
+        function createtime(){
+            // 当前时间
+            now.setTime(now.getTime()+250);
+            var grt= new Date("2023/04/17 13:19:52"); //网站诞生时间
+            days = (now - grt ) / 1000 / 60 / 60 / 24;
+            dnum = Math.floor(days);
+            hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum);
+            hnum = Math.floor(hours);
+            if(String(hnum).length ==1 ){hnum = "0" + hnum;}
+            minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+            mnum = Math.floor(minutes);
+            if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+            seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+            snum = Math.round(seconds);
+            if(String(snum).length ==1 ){snum = "0" + snum;}
+
+            document.getElementById("timeDate").innerHTML = "🎉 本站已稳定运行 "+dnum+" 天 ";
+            document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒 🎉"
+        }
+        setInterval("createtime()",250); 
+    </script> 
+    {# <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <div style="display: none;">
+        <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+    </div> #}
+</div>
+
+<script defer src="/_vercel/insights/script.js"></script>

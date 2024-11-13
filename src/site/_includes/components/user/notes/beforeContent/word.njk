@@ -1,0 +1,41 @@
+<span id="wordCount" style="color: var(--text-muted); font-size:14px;"></span>
+<div class="post-ai" style="display: none;">
+    <div class="ai-title">
+        <div class="ai-title-text">🤖 AI 摘要</div>
+    </div>
+    <div id="ai-explanation" class="ai-explanation"></div>
+    <div style="color: var(--text-muted); font-size:14px; padding:0.5rem 0 0 0.5rem;">此内容根据文章生成，并经过人工审核，仅用于文章内容的解释与总结。</div>
+</div>
+
+<script src="https://fastly.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js"></script>
+<script type="text/javascript">
+  if (document.querySelector("#summary") !== null) {
+      document.querySelector("#summary").style.display = "none";
+  }
+  document.addEventListener("DOMContentLoaded", function() {
+    var count = 0; // 统计字数
+    var str = document.getElementsByTagName("main")[0].innerHTML; // 网页文字包含标签
+    var tmpDiv = document.createElement("div");
+    tmpDiv.innerHTML = str;
+    str = tmpDiv.textContent || tmpDiv.innerText || "";
+    str = str.replace(/\ +/g,"");
+    str = str.replace(/[\r\n]/g,"");
+    count = str.length;
+    var time = Math.max(Math.floor(count / 400), 1);
+    document.querySelector("#wordCount").innerHTML = String.fromCodePoint("0x1F4D6") + '本文约 ' + count + ' 字，预计阅读时间 ' + time + ' 分钟。';
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    if (document.querySelector("#summary") !== null) {
+        document.querySelector(".post-ai").style.display = "block";
+    }
+    const matchingSummary = document.querySelector("#summary").textContent.trim();
+
+    new TypeIt("#ai-explanation", {
+        strings: matchingSummary,
+        speed: 50,
+        lifeLike: true,
+        waitUntilVisible: true,
+    }).go();
+  });
+</script>
