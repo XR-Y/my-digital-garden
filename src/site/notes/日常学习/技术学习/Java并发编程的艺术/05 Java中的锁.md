@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/日常学习/技术学习/Java并发编程的艺术/05 Java中的锁/","title":"05 Java中的锁","tags":["八股"],"noteIcon":"1","created":"2023-07-21T11:37:40.194+08:00","updated":"2024-11-13T20:39:44.166+08:00"}
+{"dg-publish":true,"permalink":"/日常学习/技术学习/Java并发编程的艺术/05 Java中的锁/","title":"05 Java中的锁","tags":["八股","Java并发"],"noteIcon":"1","created":"2023-07-21T11:37:40.194+08:00","updated":"2025-01-01T10:49:14.567+08:00"}
 ---
 
 -   synchronized 关键字隐式地获取锁，将锁的获取和释放固化，简化了同步的管理，但扩展性没有显式的锁获取和释放强。
