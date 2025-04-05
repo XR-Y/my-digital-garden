@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/日常学习/工具折腾/Repomix 合零为整/","title":"Repomix 合零为整","tags":["LLM","折腾"],"noteIcon":"1","created":"2025-02-25T15:15:00.815+08:00","updated":"2025-02-25T17:36:27.042+08:00"}
+{"dg-publish":true,"permalink":"/日常学习/工具折腾/Repomix 合零为整/","title":"Repomix 合零为整","tags":["LLM","折腾"],"noteIcon":"1","created":"2025-02-25T15:15:00.815+08:00","updated":"2025-02-28T13:11:53.208+08:00"}
 ---
 
 这两天 Github Trends 里出现了个工具 [Repomix](https://github.com/yamadashy/repomix)，简单来说就是把整个仓库的各种信息整合成一个 XML/Markdown/Plain 文件，然后喂给模型，让模型充分了解仓库并尝试在后面的问答中寻找符合的关联，感觉是一个不错的提示模板设计案例。
@@ -63,3 +63,4 @@ Additional Info:
 
 从图中可以看到，SWE-bench（选取自若干个 python 真实项目的 issues）的显著提升证实了在已有的框架上修复 issue 的 SOTA 能力。那么如果搭配上 Repomix 和 Trae，也就是结合全局理解和上下文窗口，可能能够获得更好的效果。
 在不考虑隐私的情况下，AI 各种加持的能力已经越来越恐怖了，只能多尝试充分利用好 AI 工作流来避免被淘汰了。
+另，Claude3.7 公布了 [System Prompt](https://docs.anthropic.com/en/release-notes/system-prompts)。

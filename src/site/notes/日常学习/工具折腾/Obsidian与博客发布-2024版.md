@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/日常学习/工具折腾/Obsidian与博客发布-2024版/","title":"Obsidian与博客发布-2024版","tags":["Obsidian","折腾","Hexo"],"noteIcon":"1","created":"2024-09-22T23:36:09.429+08:00","updated":"2025-02-25T17:25:38.475+08:00"}
+{"dg-publish":true,"permalink":"/日常学习/工具折腾/Obsidian与博客发布-2024版/","title":"Obsidian与博客发布-2024版","tags":["Obsidian","折腾","Hexo"],"noteIcon":"1","created":"2024-09-22T23:36:09.429+08:00","updated":"2025-02-28T12:35:20.346+08:00"}
 ---
 
 
@@ -36,3 +36,7 @@
 # 回旋镖
 
 在又一次部署的时候发现意外又来了，触发了 [Netlify的身份验证](https://www.baiwulin.com/89.html)，好的，不想泄露个人信息，我现在觉得 Vercel 最好，立即跑回 Vercel 了。
+
+# 图床
+
+由于廉价服务器的贫弱带宽，将 memos 的图床迁移到了赛博菩萨 B2 和 Cloudflare，详情参考 [Blog 图床方案：Backblaze B2 (私密桶) + Cloudflare Workers + PicGo](https://blog.standat42.com/posts/image-hosting-backblaze-b2-private-cloudflare-workers-picgo/)。
