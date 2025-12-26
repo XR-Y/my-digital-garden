@@ -1,7 +1,6 @@
 ---
-{"dg-publish":true,"permalink":"/日常学习/工具折腾/Hello Dify/","title":"Hello Dify","tags":["LLM","折腾","Agent"],"noteIcon":"1","created":"2025-02-24T17:01:11.969+08:00","updated":"2025-02-25T17:36:30.967+08:00"}
+{"dg-publish":true,"permalink":"/日常学习/工具折腾/Hello Dify/","title":"Hello Dify","tags":["LLM","折腾","Agent"],"noteIcon":"1","created":"2025-02-24T17:01:11.969+08:00","updated":"2025-12-17T21:39:36.312+08:00"}
 ---
-
 
 ![Dify 介绍.png](https://s2.loli.net/2025/02/24/y1bK24wctqoSQeP.png)
 

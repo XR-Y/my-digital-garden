@@ -1,7 +1,6 @@
 ---
-{"dg-publish":true,"permalink":"/日常学习/工具折腾/Obsidian与博客发布-2024版/","title":"Obsidian与博客发布-2024版","tags":["Obsidian","折腾","Hexo"],"noteIcon":"1","created":"2024-09-22T23:36:09.429+08:00","updated":"2025-02-28T12:35:20.346+08:00"}
+{"dg-publish":true,"permalink":"/日常学习/工具折腾/Obsidian与博客发布-2024版/","title":"Obsidian与博客发布-2024版","tags":["Obsidian","折腾","Hexo"],"noteIcon":"1","created":"2024-09-22T23:36:09.429+08:00","updated":"2025-12-17T22:00:16.312+08:00"}
 ---
-
 
 # 起因
 
