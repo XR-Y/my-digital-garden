@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/日常学习/工具折腾/Repomix 合零为整/","title":"Repomix 合零为整","tags":["LLM","折腾"],"noteIcon":"1","created":"2025-02-25T15:15:00.815+08:00","updated":"2025-12-17T21:37:41.463+08:00"}
+{"dg-publish":true,"permalink":"/日常学习/工具折腾/Repomix 合零为整/","title":"Repomix 合零为整","tags":["LLM","折腾"],"noteIcon":"1","created":"2025-02-25T15:15:00.815+08:00","updated":"2026-01-17T13:10:22.235+08:00"}
 ---
 
 这两天 Github Trends 里出现了个工具 [Repomix](https://github.com/yamadashy/repomix)，简单来说就是把整个仓库的各种信息整合成一个 XML/Markdown/Plain 文件，然后喂给模型，让模型充分了解仓库并尝试在后面的问答中寻找符合的关联，感觉是一个不错的提示模板设计案例。

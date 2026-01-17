@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/日常学习/工具折腾/Obsidian你的博客/","title":"Obsidian你的博客","tags":["Obsidian","折腾","Memos"],"noteIcon":"1","created":"2023-09-20T21:35:09.212+08:00","updated":"2025-02-25T17:26:10.556+08:00"}
+{"dg-publish":true,"permalink":"/日常学习/工具折腾/Obsidian你的博客/","title":"Obsidian你的博客","tags":["Obsidian","折腾","Memos"],"noteIcon":"1","created":"2023-09-20T21:35:09.212+08:00","updated":"2026-01-17T13:10:22.233+08:00"}
 ---
 
 

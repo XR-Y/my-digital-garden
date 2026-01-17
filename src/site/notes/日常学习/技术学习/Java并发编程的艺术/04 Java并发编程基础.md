@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/日常学习/技术学习/Java并发编程的艺术/04 Java并发编程基础/","title":"04 Java并发编程基础","tags":["八股","Java并发"],"noteIcon":"1","created":"2023-07-19T16:59:05.560+08:00","updated":"2025-01-01T10:49:09.630+08:00"}
+{"dg-publish":true,"permalink":"/日常学习/技术学习/Java并发编程的艺术/04 Java并发编程基础/","title":"04 Java并发编程基础","tags":["八股","Java并发"],"noteIcon":"1","created":"2023-07-19T16:59:05.560+08:00","updated":"2026-01-17T13:10:22.246+08:00"}
 ---
 
 -   一个 Java 程序的运行，不仅仅是 `main()` 方法的运行，而是 main 线程和多个其他线程的同时运行。
